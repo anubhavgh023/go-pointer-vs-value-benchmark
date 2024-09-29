@@ -19,7 +19,7 @@ When passing a struct to a function in Go, you can either:
 ## Project Structure
 
 ```bash
-learning-do/
+go-pointer-vs-value-benchmark/
     ├── py-graph/           # Python visualization and animation
     │   ├── venv/           # Python virtual environment (optional)
     │   ├── animate.py      # Python script for animated graph visualization
@@ -83,7 +83,7 @@ You need Go 1.23.1 or later installed. If Go is not installed, follow the instru
 
         ```bash
         cd py-graph
-        python visualize.py
+        python3 visualize.py
         ```
 
         This will generate a static plot comparing the performance of passing by value and by pointer.
@@ -103,7 +103,7 @@ You need Go 1.23.1 or later installed. If Go is not installed, follow the instru
 
 ### Go Code (`main.go`)
 
-The main Go file performs the benchmarking by creating structs of increasing sizes, from 1MB to 1GB, and measures the time it takes to pass them by value vs. by pointer. 
+The main Go file performs the benchmarking by creating structs of increasing sizes, from 1 byte to 1GB, and measures the time it takes to pass them by value vs. by pointer. 
 
 **Key functions:**
 
@@ -126,7 +126,7 @@ Based on this benchmark:
 
 ## Example Visualization
 
-![Pass by Value vs Pass by Pointer](PassByValue-vs-PassByPointer.img)
+![Pass by Value vs Pass by Pointer](../go-pointer-vs-value-benchmark/PassByValue(ns)andPassByPointer(ns).png)
 
 ## System Specifications
 
