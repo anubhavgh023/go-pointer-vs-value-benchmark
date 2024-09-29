@@ -126,7 +126,7 @@ Based on this benchmark:
 
 ## Example Visualization
 
-![Pass by Value vs Pass by Pointer](../go-pointer-vs-value-benchmark/PassByValue(ns)andPassByPointer(ns).png)
+<img src="py-graph/bench-gif.gif"><img/>
 
 ## System Specifications
 
